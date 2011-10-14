@@ -52,6 +52,10 @@
 		659FA5BF0FF70EAA000A86E1 /* FakeCompass.sb in Resources */ = {isa = PBXBuildFile; fileRef = 659FA5B90FF70EAA000A86E1 /* FakeCompass.sb */; };
 		659FA5C00FF70EAA000A86E1 /* FakeVoiceMemos in Resources */ = {isa = PBXBuildFile; fileRef = 659FA5BA0FF70EAA000A86E1 /* FakeVoiceMemos */; };
 		659FA5C10FF70EAA000A86E1 /* FakeVoiceMemos.sb in Resources */ = {isa = PBXBuildFile; fileRef = 659FA5BD0FF70EAA000A86E1 /* FakeVoiceMemos.sb */; };
+		684D000014484B2B003989BD /* iPhoneFrameLandscape_right-Key.png in Resources */ = {isa = PBXBuildFile; fileRef = 684DFFFC14484B2B003989BD /* iPhoneFrameLandscape_right-Key.png */; };
+		684DFFFD14484B2B003989BD /* FadeFrame-Key.png in Resources */ = {isa = PBXBuildFile; fileRef = 684DFFF914484B2B003989BD /* FadeFrame-Key.png */; };
+		684DFFFE14484B2B003989BD /* FadeFrameLandscape-Key.png in Resources */ = {isa = PBXBuildFile; fileRef = 684DFFFA14484B2B003989BD /* FadeFrameLandscape-Key.png */; };
+		684DFFFF14484B2B003989BD /* iPhoneFrame-Key.png in Resources */ = {isa = PBXBuildFile; fileRef = 684DFFFB14484B2B003989BD /* iPhoneFrame-Key.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -115,6 +119,10 @@
 		659FA5B90FF70EAA000A86E1 /* FakeCompass.sb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FakeCompass.sb; path = SimAppCollection/FakeApps/FakeCompass.sb; sourceTree = "<group>"; };
 		659FA5BA0FF70EAA000A86E1 /* FakeVoiceMemos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FakeVoiceMemos; path = SimAppCollection/FakeApps/FakeVoiceMemos; sourceTree = "<group>"; };
 		659FA5BD0FF70EAA000A86E1 /* FakeVoiceMemos.sb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FakeVoiceMemos.sb; path = SimAppCollection/FakeApps/FakeVoiceMemos.sb; sourceTree = "<group>"; };
+		684DFFF914484B2B003989BD /* FadeFrame-Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FadeFrame-Key.png"; sourceTree = "<group>"; };
+		684DFFFA14484B2B003989BD /* FadeFrameLandscape-Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FadeFrameLandscape-Key.png"; sourceTree = "<group>"; };
+		684DFFFB14484B2B003989BD /* iPhoneFrame-Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneFrame-Key.png"; sourceTree = "<group>"; };
+		684DFFFC14484B2B003989BD /* iPhoneFrameLandscape_right-Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhoneFrameLandscape_right-Key.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SimFinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimFinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FB62C112480F03001AD88A /* iPadFade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadFade.png; sourceTree = "<group>"; };
@@ -201,6 +209,10 @@
 				5E4D86810F45EC4A00E02F03 /* FakeApps */,
 				5EA7CEEF0F43EECC00DE24FB /* Hover.png */,
 				5EA7CF180F43F90F00DE24FB /* Active.png */,
+				684DFFF914484B2B003989BD /* FadeFrame-Key.png */,
+				684DFFFA14484B2B003989BD /* FadeFrameLandscape-Key.png */,
+				684DFFFB14484B2B003989BD /* iPhoneFrame-Key.png */,
+				684DFFFC14484B2B003989BD /* iPhoneFrameLandscape_right-Key.png */,
 				5EA7D0600F450EF500DE24FB /* FadeFrame.png */,
 				2B4EC09A10301F3800042E09 /* FadeFrameLandscape.png */,
 				5EA7D0610F450EF500DE24FB /* iPhoneFrame.png */,
@@ -294,7 +306,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FakeFinger" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,6 +379,10 @@
 				C9FB62C412480F03001AD88A /* iPadFrame.png in Resources */,
 				C9FB63001249139D001AD88A /* iPadFadeLandscape.png in Resources */,
 				C9FB63011249139D001AD88A /* iPadFrameLandscape_right.png in Resources */,
+				684DFFFD14484B2B003989BD /* FadeFrame-Key.png in Resources */,
+				684DFFFE14484B2B003989BD /* FadeFrameLandscape-Key.png in Resources */,
+				684DFFFF14484B2B003989BD /* iPhoneFrame-Key.png in Resources */,
+				684D000014484B2B003989BD /* iPhoneFrameLandscape_right-Key.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

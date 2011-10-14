@@ -19,6 +19,8 @@
 	
 	BOOL pointerOverlayIsHidden;
 	BOOL hardwareOverlayIsHidden;
+    
+    BOOL useKeyBackground;
 	
 	int setTextMode;
 	NSMutableDictionary *springboardPrefs;
@@ -33,6 +35,8 @@
 - (IBAction)configureHardwareOverlay:(NSMenuItem *)sender;
 - (IBAction)configurePointerOverlay:(NSMenuItem *)sender;
 - (IBAction)positionSimulatorWindow:(id)sender;
+
+- (IBAction)toggleKeyBackground:(id)sender;
 
 - (IBAction)promptCarrierText:(id)sender;
 - (IBAction)promptTimeText:(id)sender;

@@ -107,19 +107,36 @@ void WindowFrameDidChangeCallback( AXObserverRef observer, AXUIElementRef elemen
 			int iPadHeight = 1108;
 			
 			if((int)size.width == iPhoneWidth && (int)size.height == iPhoneHeight) {
+                NSString *frame = @"iPhoneFrame";
+                NSString *fade = @"FadeFrame";
+                
+                if (useKeyBackground) {
+                    frame = [frame stringByAppendingString:@"-Key"];
+                    fade = [fade stringByAppendingString:@"-Key"];
+                }
+                
 				[hardwareOverlay setContentSize:NSMakeSize(634, 985)];
-				[hardwareOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"iPhoneFrame"]]];
+				[hardwareOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:frame]]];
 				
 				[fadeOverlay setContentSize:NSMakeSize(634,985)];
-				[fadeOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"FadeFrame"]]];
+				[fadeOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:fade]]];
 				
 				supportedSize = YES;
 			} else if((int)size.width == iPhoneHeight && (int)size.height == iPhoneWidth) {
+                
+                NSString *frame = @"iPhoneFrameLandscape_right";
+                NSString *fade = @"FadeFrameLandscape";
+                
+                if (useKeyBackground) {
+                    frame = [frame stringByAppendingString:@"-Key"];
+                    fade = [fade stringByAppendingString:@"-Key"];
+                }
+
 				[hardwareOverlay setContentSize:NSMakeSize(985,634)];
-				[hardwareOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"iPhoneFrameLandscape_right"]]];
+				[hardwareOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:frame]]];
 				
 				[fadeOverlay setContentSize:NSMakeSize(985,634)];
-				[fadeOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"FadeFrameLandscape"]]];
+				[fadeOverlay setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:fade]]];
 				
 				supportedSize = YES;
 				landscape = YES;
@@ -173,6 +190,13 @@ void WindowFrameDidChangeCallback( AXObserverRef observer, AXUIElementRef elemen
 			
 		}
 	}
+}
+
+- (IBAction)toggleKeyBackground:(NSMenuItem *)sender;
+{
+    useKeyBackground = !useKeyBackground;
+    [sender setState:useKeyBackground];
+    [self positionSimulatorWindow:nil];
 }
 
 - (NSString *)iosVersion
