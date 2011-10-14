@@ -190,6 +190,7 @@ void WindowFrameDidChangeCallback( AXObserverRef observer, AXUIElementRef elemen
 			
 		}
 	}
+    [self hideTheCursor];
 }
 
 - (IBAction)toggleKeyBackground:(NSMenuItem *)sender;
